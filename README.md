@@ -1,2 +1,2 @@
-# up
-ETH NYC project
+# Fund H3r - ETH NYC project
+
