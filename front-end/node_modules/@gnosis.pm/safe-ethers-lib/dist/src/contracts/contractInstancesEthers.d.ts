@@ -1,0 +1,12 @@
+import { Signer } from '@ethersproject/abstract-signer';
+import { SafeVersion } from '@gnosis.pm/safe-core-sdk-types';
+import GnosisSafeContract_V1_1_1_Ethers from './GnosisSafe/v1.1.1/GnosisSafeContract_V1_1_1_Ethers';
+import GnosisSafeContract_V1_2_0_Ethers from './GnosisSafe/v1.2.0/GnosisSafeContract_V1_2_0_Ethers';
+import GnosisSafeContract_V1_3_0_Ethers from './GnosisSafe/v1.3.0/GnosisSafeContract_V1_3_0_Ethers';
+import GnosisSafeProxyFactoryContract_V1_1_1_Ethers from './GnosisSafeProxyFactory/v1.1.1/GnosisSafeProxyFactoryContract_V1_1_1_Ethers';
+import GnosisSafeProxyFactoryContract_V1_3_0_Ethers from './GnosisSafeProxyFactory/v1.3.0/GnosisSafeProxyFactoryContract_V1_3_0_Ethers';
+import MultiSendContract_V1_1_1_Ethers from './MultiSend/v1.1.1/MultiSendContract_V1_1_1_Ethers';
+import MultiSendContract_V1_3_0_Ethers from './MultiSend/v1.3.0/MultiSendContract_V1_3_0_Ethers';
+export declare function getSafeContractInstance(safeVersion: SafeVersion, contractAddress: string, signer: Signer): GnosisSafeContract_V1_3_0_Ethers | GnosisSafeContract_V1_2_0_Ethers | GnosisSafeContract_V1_1_1_Ethers;
+export declare function getMultiSendContractInstance(safeVersion: SafeVersion, contractAddress: string, signer: Signer): MultiSendContract_V1_3_0_Ethers | MultiSendContract_V1_1_1_Ethers;
+export declare function getSafeProxyFactoryContractInstance(safeVersion: SafeVersion, contractAddress: string, signer: Signer): GnosisSafeProxyFactoryContract_V1_3_0_Ethers | GnosisSafeProxyFactoryContract_V1_1_1_Ethers;
