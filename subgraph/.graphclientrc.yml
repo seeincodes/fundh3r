@@ -1,0 +1,8 @@
+sources:
+  - name: gnosis-goerli
+    handler:
+      graphql:
+        endpoint: https://api.thegraph.com/subgraphs/name/gjeanmart/gnosis-safe-goerli
+
+documents:
+  - ./example-query.graphql

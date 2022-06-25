@@ -1,0 +1,8 @@
+query ExampleQuery {
+  wallets(first: 10, orderBy: stamp) {
+    owners
+    network
+    id
+    hash
+  }
+}

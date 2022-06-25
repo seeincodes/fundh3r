@@ -1,6 +1,66 @@
 {
+  "name": "up",
+  "version": "1.5.2",
+  "private": true,
+  "homepage": "./",
   "dependencies": {
+    "@gnosis.pm/safe-apps-react-sdk": "^4.4.0",
+    "@gnosis.pm/safe-react-components": "^1.1.4",
+    "@gnosis.pm/safe-react-gateway-sdk": "^3.1.2",
+    "@material-ui/core": "^4.12.4",
+    "@truffle/hdwallet-provider": "^2.0.8",
     "@walletconnect/client": "^1.7.8",
-    "@walletconnect/qrcode-modal": "^1.7.8"
-  }
+    "date-fns": "^2.28.0",
+    "jsqr": "^1.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.5",
+    "chai": "^4.3.6",
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.6.0",
+    "hardhat": "^2.9.9",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "clean": "rimraf build",
+    "compile": "truffle compile --config truffle-config.js",
+    "test:integration": "truffle test ./test/erc20.spec.js --network boba_rinkeby --config truffle-config.js",
+    "deploy": "truffle migrate --network boba_rinkeby --config truffle-config"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "main": "index.js",
+  "repository": "git@github.com:seeinplays/up.git",
+  "author": "“seeinplays” <“seeinplays@gmail.com”>",
+  "license": "MIT"
 }
