@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
-// import avertaFont from '@gnosis.pm/safe-react-components/dist/fonts/averta-normal.woff2'
-// import avertaBoldFont from '@gnosis.pm/safe-react-components/dist/fonts/averta-bold.woff2'
+import avertaFont from '@gnosis.pm/safe-react-components'
+import avertaBoldFont from '@gnosis.pm/safe-react-components'
 
 const GlobalStyle = createGlobalStyle`
     html {
@@ -17,16 +17,16 @@ const GlobalStyle = createGlobalStyle`
         height: 100%;
     }
 
-    // @font-face {
-    //     font-family: 'Averta';
-    //     src: local('Averta'), url(${avertaFont}) format('woff2')        
-    // }
+    @font-face {
+        font-family: 'Averta';
+        src: local('Averta'), url(${avertaFont}) format('woff2')        
+    }
 
-    // @font-face {
-    //     font-family: 'Averta';
-    //     src: local('Averta Bold'), url(${avertaBoldFont}) format('woff');
-    //     font-weight: bold;
-    // }
+    @font-face {
+        font-family: 'Averta';
+        src: local('Averta Bold'), url(${avertaBoldFont}) format('woff');
+        font-weight: bold;
+    }
 `
 
 export default GlobalStyle
