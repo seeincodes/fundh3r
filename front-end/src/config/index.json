@@ -1,25 +1,25 @@
 {
   "company": {
-    "name": "React landing page 2021",
-    "logo": "/assets/images/logo.png"
+    "name": "Fund H3r",
+    "logo": "/assets/images/FundH3er_logo_small.png"
   },
   "navigation": [
     {
-      "name": "Product",
-      "href": "product"
+      "name": "Our Mission",
+      "href": "mission"
     },
     {
-      "name": "Features",
-      "href": "features"
+      "name": "Our Team",
+      "href": "team"
     },
 
     {
-      "name": "Pricing",
-      "href": "pricing"
+      "name": "Donate",
+      "href": "donate"
     },
     {
-      "name": "About",
-      "href": "about"
+      "name": "Register",
+      "href": "register"
     }
   ],
   "callToAction": {
@@ -27,21 +27,13 @@
     "href": "#"
   },
   "mainHero": {
-    "title": "Use me as your",
-    "subtitle": "landing page.",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
-    "img": "/assets/images/happyTeam.jpeg",
-    "primaryAction": {
-      "text": "Get started",
-      "href": "#"
-    },
-    "secondaryAction": {
-      "text": "Email us",
-      "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
-    }
+    "title": "Fund H3r",
+    "subtitle": "",
+    "description": "A one stop shop for donating crypto to organizations supporting women reproductive rights.",
+    "img": "/assets/images/FundH3er_landing.png"
   },
-  "product": {
-    "title": "React landing page 2021",
+  "team": {
+    "title": "Our Team",
     "items": [
       {
         "title": "A plug n play template",
@@ -55,8 +47,8 @@
       }
     ]
   },
-  "features": {
-    "title": "Latest & greatest ",
+  "donate": {
+    "title": "Causes",
     "subtitle": "All the best technologies out there!",
     "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
     "items": [
@@ -82,42 +74,23 @@
       }
     ]
   },
-  "pricing": {
-    "title": "Pricing",
+  "mission": {
+    "title": "Our Mission",
     "items": [
       {
-        "name": "Free",
-        "price": "$0",
-        "priceDetails": "for one user",
-        "features": [
-          "1 user",
-          "Basic Support",
-          "1 GB of storage",
-          "Email support"
-        ]
-      },
+        "title": "Enable Crypto Donations to Support Women Reproductive Rights",
+        "description": "Onboarding non-profits to diversify their funding options and localizing source for organizations. We believe the goal of crypto is to support freedom. Women must have the freedom to realize their full potential professionally and personally. This can only be done if women have the right to choose if and when they want to be mothers.",
+        "img": "/assets/images/Mission.png"
+      }
+    ]
+  },
+  "register": {
+    "title": "Register Your Organization",
+    "items": [
       {
-        "name": "Pro",
-        "price": "$15",
-        "priceDetails": "per user",
-
-        "features": [
-          "5 users",
-          "Priority Support",
-          "10 GB of storage",
-          "Phone and Email support"
-        ]
-      },
-      {
-        "name": "Enterprise",
-        "price": "$29",
-        "priceDetails": "per user",
-        "features": [
-          "50 users",
-          "24/7 Support",
-          "100 GB of storage",
-          "Phone and Email support"
-        ]
+        "title": "Enable Crypto Donations to Support Women Reproductive Rights",
+        "description": "Onboarding non-profits to diversify their funding options and localizing source for organizations. We believe the goal of crypto is to support freedom. Women must have the freedom to realize their full potential professionally and personally. This can only be done if women have the right to choose if and when they want to be mothers.",
+        "img": "/assets/images/Mission.png"
       }
     ]
   },
