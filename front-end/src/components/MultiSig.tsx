@@ -13,6 +13,7 @@ import { ethers } from 'ethers';
 import EthersAdapter from '@gnosis.pm/safe-ethers-lib';
 // import SafeServiceClient, { OwnerResponse } from '@gnosis.pm/safe-service-client';
 import Safe, { SafeFactory, SafeAccountConfig } from '@gnosis.pm/safe-core-sdk';
+import EpnsSDK from "@epnsproject/backend-sdk-staging"
 import { Button } from 'react-bootstrap';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
@@ -33,7 +34,7 @@ let newSafeAddress = ""
 
 const createSafe = async (addresses: any) => {
   const safeFactory = await SafeFactory.create({ ethAdapter: ethAdapterOwner1 })
-  //  TODO: should be a check for minimum of 5 benefactors before creation
+  //  TODO: should be a check for 3 trustees before creation
   const owners = addresses;
   const threshold = 2
   const safeAccountConfig: SafeAccountConfig = {
@@ -41,6 +42,24 @@ const createSafe = async (addresses: any) => {
     threshold,
   }
 
+  // @ts-ignore
+  const epnsSdk = new EpnsSDK(process.env.EPNS_PK);
+
+  for (let index = 0; index < addresses.length; index++) {
+    const tx = await epnsSdk.sendNotification(
+      "0xde6FDB9B0Ff7538f870B946Be580c210FAed11d5",
+      "Donations arrived",
+      "Donations from a donor",
+      "Donations arrived",
+      "Donations arrived",
+      3,
+      "",
+      "",
+      null
+  )
+    
+  }
+  
   const safeSdk: Safe = await safeFactory.deploySafe({ safeAccountConfig });
 
   newSafeAddress = await safeSdk.getAddress()
@@ -48,6 +67,7 @@ const createSafe = async (addresses: any) => {
 
 }
 
+// @ts-ignore
 const provider = new ethers.providers.Web3Provider(window.ethereum);
 
 const owner1 = provider.getSigner(0);
