@@ -1,1 +1,0 @@
-{"c":["pages/_app","pages/index","webpack"],"r":[],"m":["./node_modules/next/dist/build/polyfills/process.js","./node_modules/next/dist/compiled/process/browser.js","./node_modules/next/script.js","./src/components/Analytics.tsx","./src/components/Features.tsx","./src/components/Pricing.tsx","./src/components/Product.tsx","./src/lib/googleAds.ts","./src/lib/gtag.ts"]}

@@ -20,6 +20,12 @@ const Register = () => {
             <p className={`text-gray-600`}>{firstItem?.description}</p>
           </div>
         </div>
+        <div className={`flex flex-wrap`}>
+          <div className={`w-6/6 sm:w-1/2 p-6 mt-20`}>
+            <h3 className={`text-3xl text-gray-800 font-bold leading-none mb-3`}> Sign </h3>
+            <button/>
+          </div>
+        </div>
       </div>
     </section>
   );
