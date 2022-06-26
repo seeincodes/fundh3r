@@ -1,7 +1,7 @@
 import React from 'react';
 
 import About from '../components/About';
-import Canvas from '../components/Canvas';
+// import Canvas from '../components/Canvas';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
