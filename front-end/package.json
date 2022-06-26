@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "homepage": "https://seeinplays.github.io/fundh3r",
-    "publish": "gh-pages -d src",
+    "publish": "gh-pages -d public/",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
