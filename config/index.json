@@ -1,0 +1,134 @@
+{
+  "company": {
+    "name": "Fund H3r",
+    "logo": "/assets/images/FundH3er_twitter_PP.png"
+  },
+  "navigation": [
+    {
+      "name": "Mission",
+      "href": "mission"
+    },
+
+
+    {
+      "name": "Donate",
+      "href": "donate"
+    },
+    {
+      "name": "Register",
+      "href": "register"
+    },
+    {
+      "name": "Team",
+      "href": "team"
+    },
+    {
+      "name": "Connect Wallet"
+    }
+
+  ],
+  "callToAction": {
+    "text": "Get started",
+    "href": "#"
+  },
+  "mainHero": {
+    "title": "/assets/images/FundH3er_logo_small.png",
+    "subtitle": "",
+    "description": "A one stop shop for donating crypto to organizations supporting women reproductive rights.",
+    "img": "/assets/images/FundH3er_landing.png"
+  },
+  "team": {
+    "title": "Our Team",
+    "items": [
+      {
+        "title": "A plug n play template",
+        "description": "Just edit the config.json file with details about your company and voila your beautiful state of the art landing page is ready to go live! Remember to also update your assets, add any images you want to show to /assets/images and link them in the config.json",
+        "img": "/assets/images/product1.jpg"
+      },
+      {
+        "title": "Make it your own!",
+        "description": "Play around with the theme.ts file and configure the color palette to match the branding of your company! If you're feeling wild, maybe change some tailwind css as well!",
+        "img": "/assets/images/product2.jpg"
+      }
+    ]
+  },
+  "donate": {
+    "title": "Organizations",
+    "subtitle": "Do Good With Crypto",
+    "description": "Every minute matters, start giving now. These organizations already accept crypto donations, learn more about their work, what they fund, and start changing lives!",
+    "items": [
+      {
+        "name": "Choice USA",
+        "description": "Choice USA mobilizes and provides ongoing support to the diverse, upcoming generation of leaders who promote and protect reproductive choice both now and in the future.",
+        "funds": "Abortion Pills, Contraception, Emergency Contraception",
+        "icon": "https://demo.storj-ipfs.com/ipfs/QmdvCsYkVoJMtGCnwp6TW2WNxcF7T5H5sAntVV3qtMYW9b"
+      },
+      {
+        "name": "Planned Parenthood",
+        "description": "Planned Parenthood believes in the fundamental right of each individual, throughout the world, to manage his or her fertility, regardless of the individual's income, marital status, race, ethnicity, sexual orientation, age, national origin, or residence.",
+        "funds": "Abortion Pills, Contraception, Emergency Contraception, Financial Assistance, Gynecological Exams, Judicial Bypass Support, Language Interpretation, Options Counseling, Referrals, Spanish Translation Services",
+        "icon": "https://demo.storj-ipfs.com/ipfs/QmXkEYdaNZiDPhzzW4R1vYoELHj3ZLXMJQxvs5NTmUVQwo"
+      },
+      {
+        "name": "NARAL Pro-Choice American Foundation",
+        "description": "To support, as a fundamental right and value, a woman's freedom to make personal decisions regarding the full range of reproductive choices through education, training, organizing, legal action and public policy.",
+        "funds": "Lodging, Travel, Spanish Speaking",
+        "icon": "https://demo.storj-ipfs.com/ipfs/QmZLPH4ubq4i6WELLCzQxzxX5PdwE9S4PHLj1N44TwmGGR"
+      },
+      {
+        "name": "Fund Texas Choice",
+        "description": "Fund Texas Choice helps Texans equitably access abortion through safe, confidential, and comprehensive travel services and practical support.",
+        "funds": "Lodging, Travel, Spanish Speaking",
+        "icon": "https://demo.storj-ipfs.com/ipfs/QmatRs79jxvpSkabPSKzzLCsR4pj3VKi2q6MRRPRfm8BiV"
+      }
+    ]
+  },
+  "mission": {
+    "title": "Our Mission",
+    "items": [
+      {
+        "title": "Enable Crypto Donations to Support Womens Reproductive Rights",
+        "description": "Onboarding non-profits to diversify their funding options and localizing source for organizations. We believe the goal of crypto is to support freedom. Women must have the freedom to realize their full potential professionally and personally. This can only be done if women have the right to choose if and when they want to be mothers.",
+        "img": "/assets/images/Mission.png"
+      }
+    ]
+  },
+  "register": {
+    "title": "Register Your Organization",
+    "items": [
+      {
+        "title": "Enable Crypto Donations to Support Womens Reproductive Rights",
+        "description": "Onboarding non-profits to diversify their funding options and localizing source for organizations. We believe the goal of crypto is to support freedom. Women must have the freedom to realize their full potential professionally and personally. This can only be done if women have the right to choose if and when they want to be mothers.",
+        "img": "/assets/images/Mission.png"
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      },
+      {
+        "name": "",
+        "href": "#",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/seeinplays/fundh3r",
+      "twitter": ""
+    }
+  }
+}
