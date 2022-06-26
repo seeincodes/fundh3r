@@ -1,7 +1,7 @@
 import React from 'react';
 
 import About from '../components/About';
-import Canvas from '../components/Canvas';
+// import Canvas from '../components/Canvas';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
@@ -27,28 +27,24 @@ const App = () => {
       <LazyShow>
         <>
           <Mission />
-          <Canvas />
         </>
       </LazyShow>
       {/* OUR TEAM */}
       <LazyShow>
         <>
           <OurTeam />
-          <Canvas />
         </>
       </LazyShow>
       {/* DONATE TO CAUSE */}
       <LazyShow>
         <>
         <Donate />
-        <Canvas />
         </>
       </LazyShow>
       {/* REGISTER */}
       <LazyShow>
         <>
         <Register />
-        <Canvas />
         </>
       </LazyShow>
       {/* ABOUT LINKS */}
