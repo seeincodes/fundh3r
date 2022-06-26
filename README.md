@@ -20,10 +20,11 @@ For donors, we index the chain to display on one website all donation recipients
 
 Women’s reproductive rights are a sensitive topic and companies involved are often targeted by malicious actors, to resist possible attacks on our site we store a backup in multiple nodes through decentralized storage.
 # Team Members
-Daiana Bilbao
-Xian Seeinplays
-Lau NaMu
-Greisy H 
+Daiana Bilbao (FullStack),
+Xian Seeinplays (FullStack),
+Lau NaMu (Product Manager),
+Greisy (Content Creator),
+Alejandra (Graphic Designer)
 
 
 # How To Run:
