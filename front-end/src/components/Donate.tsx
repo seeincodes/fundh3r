@@ -57,7 +57,8 @@ const Donate = () => {
             </dl>
           </div>
           <Alert show={show} variant="success">
-        <Alert.Heading> Thank You For Donating! Video NFT: </Alert.Heading>
+        <div className="lg:text-center"> Thank You For Donating!</div>
+        <hr/>
         <Video options={{
          autoplay: true,
          controls: true,
@@ -68,7 +69,7 @@ const Donate = () => {
               type: 'video/mp4'
             }]}}>
       </Video>
-        <hr />
+        <hr/>
         <div className="d-flex justify-content-end">
           <button className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-5`} onClick={() => setShow(false)} variant="outline-success">
            Close
