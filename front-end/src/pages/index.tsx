@@ -1,53 +1,62 @@
 import React from 'react';
 
 import About from '../components/About';
-import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
-import Features from '../components/Features';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
 import MainHeroImage from '../components/MainHeroImage';
-import Pricing from '../components/Pricing';
-import Product from '../components/Product';
+import Mission from '../components/Mission';
+import OurTeam from '../components/OurTeam';
+import Donate from '../components/Donate';
+import Register from '../components/Register';
 
 const App = () => {
   return (
     <div className={`bg-background grid gap-y-16 overflow-hidden`}>
       <div className={`relative bg-background`}>
         <div className="max-w-7xl mx-auto">
-          <div
-            className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}
-          >
+          <div className={`relative z-10 pb-8 bg-background sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32`}>
             <Header />
             <MainHero />
           </div>
         </div>
         <MainHeroImage />
       </div>
-      <Canvas />
+      {/* OUR MISSION */}
       <LazyShow>
         <>
-          <Product />
+          <Mission />
           <Canvas />
         </>
       </LazyShow>
+      {/* OUR TEAM */}
       <LazyShow>
         <>
-          <Features />
+          <OurTeam />
           <Canvas />
         </>
       </LazyShow>
-      <LazyShow>
-        <Pricing />
-      </LazyShow>
+      {/* DONATE TO CAUSE */}
       <LazyShow>
         <>
-          <Canvas />
+        <Donate />
+        <Canvas />
+        </>
+      </LazyShow>
+      {/* REGISTER */}
+      <LazyShow>
+        <>
+        <Register />
+        <Canvas />
+        </>
+      </LazyShow>
+      {/* ABOUT LINKS */}
+      <LazyShow>
+        <>
           <About />
         </>
       </LazyShow>
-      <Analytics />
     </div>
   );
 };
