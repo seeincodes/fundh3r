@@ -4,4 +4,3 @@ import { TatumEthSDK } from '@tatumio/eth'
 const ethSDK = TatumEthSDK({ apiKey: '<Your API Key>' })
 
 // pick Tatum service available from API docs
-const generatedWallet = await ethSDK.api.ethGenerateWallet('<mnemonic phrase>')
