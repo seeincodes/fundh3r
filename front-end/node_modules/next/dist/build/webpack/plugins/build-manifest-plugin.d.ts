@@ -5,10 +5,12 @@ export default class BuildManifestPlugin {
     private buildId;
     private rewrites;
     private isDevFallback;
+    private exportRuntime;
     constructor(options: {
         buildId: string;
         rewrites: CustomRoutes['rewrites'];
         isDevFallback?: boolean;
+        exportRuntime?: boolean;
     });
     createAssets(compiler: any, compilation: any, assets: any): any;
     apply(compiler: webpack.Compiler): void;
