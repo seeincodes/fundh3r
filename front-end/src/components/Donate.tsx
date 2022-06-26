@@ -3,7 +3,6 @@ import Divider from './Divider';
 import config from '../config/index.json';
 import Video from './VideoJS';
 import Alert from 'react-bootstrap/Alert';
-import Button from 'react-bootstrap/Button';
 
 
 const Donate = () => {
