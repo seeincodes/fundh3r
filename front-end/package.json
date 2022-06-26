@@ -2,6 +2,8 @@
   "name": "react-landing-page-2021",
   "version": "1.0.0",
   "scripts": {
+    "homepage": "https://seeinplays.github.io/fundh3r",
+    "publish": "gh-pages -d src",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -13,7 +15,7 @@
     "build-types": "tsc --noEmit --pretty",
     "prepare": "cd .. && husky install front/.husky",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@epnsproject/backend-sdk-staging": "^2.0.3",

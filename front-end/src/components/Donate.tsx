@@ -44,8 +44,12 @@ const Donate = () => {
                     {feature.description}
                   </dd>
                   <dd className="mt-2 ml-56 text-base text-black-500">
+                  // tslint:disable-next-line
+                  // @ts-ignore
                     <b>Funds used for:</b> {feature.funds}
                   </dd>
+                  // tslint:disable-next-line
+                  // @ts-ignore
                   <div onClick={()=>setShow(true)}className="rounded-md shadow">
                     <a  className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-5`}> Donate </a>
                   </div>
