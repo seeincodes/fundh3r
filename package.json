@@ -1,0 +1,7 @@
+{
+  "name": "hardhat-project",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.9",
+    "dotenv": "^16.0.1"
+  }
+}

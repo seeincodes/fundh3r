@@ -18,6 +18,17 @@ module.exports = {
       },
       network_id: 28,
       host: process.env.BOBA_URL,
+    },
+    pokt_rinkeby: {
+      provider: function () {
+        return new HDWalletProvider({
+          privateKeys: [process.env.PRIVATE_KEY],
+          providerOrUrl: process.env.POKT_API_URL,
+        })
+      },
+      // url: process.env.POKT_API_URL,
+      accounts: [process.env.PRIVATE_KEY],
+      network_id: 4
     }
   },
   compilers: {
