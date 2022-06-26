@@ -3,7 +3,7 @@ import './App.css';
 // third-web wallet connection
 import { ConnectMetamaskButtonComponent } from './ConnectWallet';
 import { useAddress } from "@thirdweb-dev/react";
-import Logo from "./assets/kindred_logo_full_white.png";
+// import Logo from "./assets/.png";
 // import { FormControl } from 'react-bootstrap';
 import { Form} from 'react-bootstrap';
 
@@ -46,7 +46,7 @@ const createSafe = async (addresses: any) => {
   const epnsSdk = new EpnsSDK(process.env.EPNS_PK);
 
   for (let index = 0; index < addresses.length; index++) {
-    const tx = await epnsSdk.sendNotification(
+    await epnsSdk.sendNotification(
       "0xde6FDB9B0Ff7538f870B946Be580c210FAed11d5",
       "Donations arrived",
       "Donations from a donor",
@@ -57,7 +57,6 @@ const createSafe = async (addresses: any) => {
       "",
       null
   )
-    
   }
   
   const safeSdk: Safe = await safeFactory.deploySafe({ safeAccountConfig });
@@ -82,10 +81,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <img  style = {{marginBottom: "40px", marginTop: "40px"}}src={Logo} />
+        {/* <img  style = {{marginBottom: "40px", marginTop: "40px"}} src={""} /> */}
         <ConnectMetamaskButtonComponent />
-
         {address ? (
           <div>
             <hr>

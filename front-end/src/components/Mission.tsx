@@ -1,5 +1,5 @@
-import { UploadIcon } from '@heroicons/react/outline';
-import React, { useEffect } from 'react';
+// import { UploadIcon } from '@heroicons/react/outline';
+import React from 'react';
 import config from '../config/index.json';
 import Divider from './Divider';
 import Video from './VideoJS';
@@ -9,7 +9,7 @@ import Video from './VideoJS';
 const Mission = () => {
   const { mission } = config;
   const [firstItem] = mission.items;
-//   "playbackUrl": "https://livepeercdn.com/recordings/0de0e291-2631-411e-bb43-1c4c79064947/index.m3u8",
+  //   "playbackUrl": "https://livepeercdn.com/recordings/0de0e291-2631-411e-bb43-1c4c79064947/index.m3u8",
 
   // "0de0e291-2631-411e-bb43-1c4c79064947"
   const getUploadURL = async () => {
@@ -58,22 +58,7 @@ const Mission = () => {
   return (
 
     <section className={`bg-background py-8`} id="mission">
-      <div>
-        <input type="file" onChange={(e: any)=> hi(e.target.files[0])}></input>
-      </div>
-      <Video options={{
-         autoplay: true,
-         controls: true,
-         responsive: true,
-         fluid: true,
-            sources: [{
-              src: 'https://livepeercdn.com/asset/ee4c2xjvtf8v7saw/video',
-              type: 'video/mp4'
-            }]
-        
-    }}>
 
-      </Video>
       <div className={`container max-w-5xl mx-auto`}>
         <h1 className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}>
           {mission.title.split(' ').map((word, index) => (
@@ -84,6 +69,19 @@ const Mission = () => {
         <div className='sm:w-1/2'>
             <h3 className={`text-gray-800 font-bold`}> {firstItem?.title}</h3>
             <p className={`text-gray-600`}>{firstItem?.description}</p>
+            <div>
+        <input type="file" onChange={(e: any)=> hi(e.target.files[0])}></input>
+      </div>
+      <Video options={{
+         autoplay: true,
+         controls: true,
+         responsive: true,
+         fluid: true,
+            sources: [{
+              src: 'https://livepeercdn.com/asset/ee4c2xjvtf8v7saw/video',
+              type: 'video/mp4'
+            }]}}>
+      </Video>
             </div>
             <div className='sm:w-1/2'>
               <img

@@ -29,12 +29,7 @@ const App = () => {
           <Mission />
         </>
       </LazyShow>
-      {/* OUR TEAM */}
-      <LazyShow>
-        <>
-          <OurTeam />
-        </>
-      </LazyShow>
+
       {/* DONATE TO CAUSE */}
       <LazyShow>
         <>
@@ -45,6 +40,12 @@ const App = () => {
       <LazyShow>
         <>
         <Register />
+        </>
+      </LazyShow>
+            {/* OUR TEAM */}
+            <LazyShow>
+        <>
+          <OurTeam />
         </>
       </LazyShow>
       {/* ABOUT LINKS */}

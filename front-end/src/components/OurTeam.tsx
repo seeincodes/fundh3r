@@ -13,6 +13,9 @@ const OurTeam = () => {
         <Divider />
         </h1>
       </div>
+      <h2 className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}>
+            Daiana, Laura, Xian, Greisy & Alejandra 🚀
+      </h2>
     </section>
   );
 };

@@ -1,10 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Divider from './Divider';
 import config from '../config/index.json';
+import Video from './VideoJS';
+import Alert from 'react-bootstrap/Alert';
+import Button from 'react-bootstrap/Button';
+
 
 const Donate = () => {
   const { donate } = config;
-  const { title, subtitle, description, items: featuresList} = donate;
+  const { subtitle, description, items: featuresList} = donate;
+  const [show, setShow] = useState(false);
   return (
       <div className={`py-12 bg-background`} id="donate">
         <h1 className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}>
@@ -42,13 +47,35 @@ const Donate = () => {
                   <dd className="mt-2 ml-56 text-base text-black-500">
                     <b>Funds used for:</b> {feature.funds}
                   </dd>
-                  <div className="rounded-md shadow">
-                    <a className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-5`}> Donate </a>
+                  <div onClick={()=>setShow(true)}className="rounded-md shadow">
+                    <a  className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-5`}> Donate </a>
                   </div>
+
+
                 </div>
+                
               ))}
             </dl>
           </div>
+          <Alert show={show} variant="success">
+        <Alert.Heading> Thank You For Donating! Video NFT: </Alert.Heading>
+        <Video options={{
+         autoplay: true,
+         controls: true,
+         responsive: true,
+         fluid: true,
+            sources: [{
+              src: 'https://livepeercdn.com/asset/f7aagooqtckl0oil/video',
+              type: 'video/mp4'
+            }]}}>
+      </Video>
+        <hr />
+        <div className="d-flex justify-content-end">
+          <button className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-primary hover:bg-border hover:text-primary md:py-4 md:text-lg md:px-5`} onClick={() => setShow(false)} variant="outline-success">
+           Close
+          </button>
+        </div>
+      </Alert>
         </div>
       </div>
     );

@@ -8,10 +8,7 @@
       "name": "Mission",
       "href": "mission"
     },
-    {
-      "name": "Team",
-      "href": "team"
-    },
+
 
     {
       "name": "Donate",
@@ -20,7 +17,15 @@
     {
       "name": "Register",
       "href": "register"
+    },
+    {
+      "name": "Team",
+      "href": "team"
+    },
+    {
+      "name": "Connect Wallet"
     }
+
   ],
   "callToAction": {
     "text": "Get started",
@@ -53,14 +58,8 @@
     "description": "Every minute matters, start giving now. These organizations already accept crypto donations, learn more about their work, what they fund, and start changing lives!",
     "items": [
       {
-        "name": "React.js",
-        "description": "React is a free and open-source front-end JavaScript library for building user interfaces or UI components.",
-        "funds": "hi",
-        "icon": "https://demo.storj-ipfs.com/ipfs/QmPYep8HQwvp23jXs6fYPYtwg2m41c7Ag7boHxZ7bsHX6S"
-      },
-      {
-        "name": "Tailwind",
-        "description": "Tailwind CSS is a highly customizable, low-level CSS framework for quickly creating beautiful designs without any annoying opinionated stylesheet nonsense.",
+        "name": "Choice USA",
+        "description": "Choice USA mobilizes and provides ongoing support to the diverse, upcoming generation of leaders who promote and protect reproductive choice both now and in the future.",
         "funds": "hi",
         "icon": "https://demo.storj-ipfs.com/ipfs/QmdvCsYkVoJMtGCnwp6TW2WNxcF7T5H5sAntVV3qtMYW9b"
       },
@@ -107,30 +106,29 @@
   "about": {
     "sections": [
       {
-        "name": "Something",
+        "name": "",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       },
       {
-        "name": "Something",
+        "name": "",
         "href": "#",
         "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
       }
     ],
     "socialMedia": {
-      "github": "https://github.com/issaafalkattan",
-      "twitter": "https://twitter.com/issaafkattan",
-      "linkedin": "https://www.linkedin.com/in/issaaf-kattan/"
+      "github": "https://github.com/seeinplays/fundh3r",
+      "twitter": ""
     }
   }
 }

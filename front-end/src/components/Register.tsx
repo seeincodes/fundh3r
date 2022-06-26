@@ -4,7 +4,7 @@ import config from '../config/index.json';
 
 const Register = () => {
   const { register } = config;
-  const [firstItem] = register.items;
+  // const [ firstItem ] = register.items;
 
   return (
     <section className={`bg-background py-8`} id="register">
