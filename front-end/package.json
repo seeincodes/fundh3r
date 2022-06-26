@@ -14,6 +14,7 @@
     "prepare": "cd .. && husky install front/.husky"
   },
   "dependencies": {
+    "@epnsproject/backend-sdk-staging": "^2.0.3",
     "@gnosis.pm/safe-service-client": "^1.1.2",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.5",
